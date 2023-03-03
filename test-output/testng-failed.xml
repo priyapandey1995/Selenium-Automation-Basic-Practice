@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="C:/Users/pande/OneDrive/Documents/Assignments_Batch_175/Selenium(failed)">
+    <classes>
+      <class name="com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings">
+        <methods>
+          <include name="signUp_Page"/>
+        </methods>
+      </class> <!-- com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings -->
+    </classes>
+  </test> <!-- C:/Users/pande/OneDrive/Documents/Assignments_Batch_175/Selenium(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
