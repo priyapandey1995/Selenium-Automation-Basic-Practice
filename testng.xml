@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <parameter name="browser" value="Chrome"></parameter>
-   <test verbose="2" preserve-order="true" name="C:/Users/pande/OneDrive/Documents/Assignments_Batch_175/Selenium">
+    <test verbose="2" preserve-order="true" name="C:/Users/pande/OneDrive/Documents/Assignments_Batch_175/Selenium">
         <classes>
             <class name="com.bridgelabz.qa.seleniumconcepts.FacebookSelect">
                 <methods>
@@ -10,14 +10,19 @@
                     <include name="SignUpFbPage_Success"/>
                 </methods>
             </class>
-            <class name="com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings">
+            <class name="com.bridgelabz.qa.seleniumconcepts.JavaScriptExecutor">
                 <methods>
-                    <include name="signUp_Page"/>
+                    <include name="execute"/>
                 </methods>
             </class>
             <class name="com.bridgelabz.qa.seleniumconcepts.LaunchWebinar">
                 <methods>
-                <include name="WebinarPage"/>
+                    <include name="WebinarPage"/>
+                </methods>
+            </class>
+            <class name="com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings">
+                <methods>
+                    <include name="signUp_Page"/>
                 </methods>
             </class>
             <class name="com.bridgelabz.qa.seleniumconcepts.LocatorsDemo">

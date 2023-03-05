@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
                     </span>
                     <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.bridgelabz.qa.seleniumconcepts.LaunchWebinar" hash-for-method="WebinarPage">WebinarPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings" hash-for-method="signUp_Page">signUp_Page</a> <!-- method navigator-link -->
@@ -128,7 +133,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.bridgelabz.qa.seleniumconcepts.LaunchWebinar" hash-for-method="WebinarPage">WebinarPage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.bridgelabz.qa.seleniumconcepts.JavaScriptExecutor" hash-for-method="execute">execute</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,6 +161,75 @@
           <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.bridgelabz.qa.seleniumconcepts.LaunchWebinar</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WebinarPage">
+                  </a> <!-- WebinarPage -->
+                  <span class="method-name">WebinarPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@value=&apos;2022&apos;]&quot;}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_342&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a59fd3cff7414b4397e2a9ca1f6b64, findElement {using=xpath, value=//div[@value=&apos;2022&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\pande\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55205/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a59fd3cff7414b4397e2a9ca1f6b64
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.bridgelabz.qa.seleniumconcepts.LaunchWebinar.WebinarPage(LaunchWebinar.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,13 +238,14 @@
                   <a name="signUp_Page">
                   </a> <!-- signUp_Page -->
                   <span class="method-name">signUp_Page</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Welcome on Frame: 
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Welcome on Frame}
+  (Session info: chrome=110.0.5481.178): Welcome on Frame
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_342&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [ca237350-222d-4185-bc8d-b7195e313a79, findElements {using=tag name, value=iframe}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:debuggerAddress: 127.0.0.1:30590, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 40336, moz:profile: C:\Users\pande\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:30590/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ca237350-222d-4185-bc8d-b7195e313a79
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a59fd3cff7414b4397e2a9ca1f6b64, findElements {using=tag name, value=iframe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\pande\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55205/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a59fd3cff7414b4397e2a9ca1f6b64
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
@@ -218,14 +293,29 @@ Session ID: ca237350-222d-4185-bc8d-b7195e313a79
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.bridgelabz.qa.seleniumconcepts.LaunchWebinar</span>
+              <span class="class-name">com.bridgelabz.qa.seleniumconcepts.RobotClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="WebinarPage">
-                  </a> <!-- WebinarPage -->
-                  <span class="method-name">WebinarPage</span>
+                  <a name="using_Robot_class">
+                  </a> <!-- using_Robot_class -->
+                  <span class="method-name">using_Robot_class</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bridgelabz.qa.seleniumconcepts.JavaScriptExecutor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="execute">
+                  </a> <!-- execute -->
+                  <span class="method-name">execute</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,21 +331,6 @@ Session ID: ca237350-222d-4185-bc8d-b7195e313a79
                   <a name="locatorsDemo">
                   </a> <!-- locatorsDemo -->
                   <span class="method-name">locatorsDemo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.bridgelabz.qa.seleniumconcepts.RobotClass</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="using_Robot_class">
-                  </a> <!-- using_Robot_class -->
-                  <span class="method-name">using_Robot_class</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,16 +376,21 @@ Session ID: ca237350-222d-4185-bc8d-b7195e313a79
           &lt;include name=&quot;SignUpFbPage_Success&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.bridgelabz.qa.seleniumconcepts.FacebookSelect --&gt;
-      &lt;class name=&quot;com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings&quot;&gt;
+      &lt;class name=&quot;com.bridgelabz.qa.seleniumconcepts.JavaScriptExecutor&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;signUp_Page&quot;/&gt;
+          &lt;include name=&quot;execute&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings --&gt;
+      &lt;/class&gt; &lt;!-- com.bridgelabz.qa.seleniumconcepts.JavaScriptExecutor --&gt;
       &lt;class name=&quot;com.bridgelabz.qa.seleniumconcepts.LaunchWebinar&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;WebinarPage&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.bridgelabz.qa.seleniumconcepts.LaunchWebinar --&gt;
+      &lt;class name=&quot;com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;signUp_Page&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings --&gt;
       &lt;class name=&quot;com.bridgelabz.qa.seleniumconcepts.LocatorsDemo&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;locatorsDemo&quot;/&gt;
@@ -334,7 +414,7 @@ Session ID: ca237350-222d-4185-bc8d-b7195e313a79
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">C:/Users/pande/OneDrive/Documents/Assignments_Batch_175/Selenium (5 classes)</span>
+                <span class="test-name">C:/Users/pande/OneDrive/Documents/Assignments_Batch_175/Selenium (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -360,31 +440,35 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SignUpFbPage_Success')
-data.setCell(0, 2, 'com.bridgelabz.qa.seleniumconcepts.FacebookSelect')
-data.setCell(0, 3, 30363);
+data.setCell(0, 1, 'WebinarPage')
+data.setCell(0, 2, 'com.bridgelabz.qa.seleniumconcepts.LaunchWebinar')
+data.setCell(0, 3, 29975);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'signUp_Page')
-data.setCell(1, 2, 'com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings')
-data.setCell(1, 3, 15067);
+data.setCell(1, 1, 'SignUpFbPage_Success')
+data.setCell(1, 2, 'com.bridgelabz.qa.seleniumconcepts.FacebookSelect')
+data.setCell(1, 3, 28549);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'WebinarPage')
-data.setCell(2, 2, 'com.bridgelabz.qa.seleniumconcepts.LaunchWebinar')
-data.setCell(2, 3, 11245);
+data.setCell(2, 1, 'signUp_Page')
+data.setCell(2, 2, 'com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings')
+data.setCell(2, 3, 10568);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'using_Robot_class')
 data.setCell(3, 2, 'com.bridgelabz.qa.seleniumconcepts.RobotClass')
-data.setCell(3, 3, 8412);
+data.setCell(3, 3, 6704);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'locatorsDemo')
-data.setCell(4, 2, 'com.bridgelabz.qa.seleniumconcepts.LocatorsDemo')
-data.setCell(4, 3, 2937);
+data.setCell(4, 1, 'execute')
+data.setCell(4, 2, 'com.bridgelabz.qa.seleniumconcepts.JavaScriptExecutor')
+data.setCell(4, 3, 3218);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'NavigateOnFbSignUpPage_Success')
-data.setCell(5, 2, 'com.bridgelabz.qa.seleniumconcepts.FacebookSelect')
-data.setCell(5, 3, 1133);
+data.setCell(5, 1, 'locatorsDemo')
+data.setCell(5, 2, 'com.bridgelabz.qa.seleniumconcepts.LocatorsDemo')
+data.setCell(5, 3, 2481);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'NavigateOnFbSignUpPage_Success')
+data.setCell(6, 2, 'com.bridgelabz.qa.seleniumconcepts.FacebookSelect')
+data.setCell(6, 3, 1033);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
@@ -404,15 +488,24 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.bridgelabz.qa.seleniumconcepts.LaunchWebinar</span>
+              <span class="ignored-class-name">com.bridgelabz.qa.seleniumconcepts.JavaScriptExecutor</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
                 <span class="ignored-method-name">TearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.bridgelabz.qa.seleniumconcepts.LaunchWebinar</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -422,6 +515,15 @@ return data;
                 <span class="ignored-method-name">TearDown</span>
                 <br/>
                 <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">TearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -440,11 +542,27 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">SignUpFbPage_Success</span>
-                <span class="method-start">5158 ms</span>
+                <span class="method-start">4203 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">NavigateOnFbSignUpPage_Success</span>
-                <span class="method-start">35531 ms</span>
+                <span class="method-start">32761 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bridgelabz.qa.seleniumconcepts.JavaScriptExecutor</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">execute</span>
+                <span class="method-start">33794 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bridgelabz.qa.seleniumconcepts.LaunchWebinar</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WebinarPage</span>
+                <span class="method-start">37012 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -453,35 +571,28 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">signUp_Page</span>
-                <span class="method-start">36669 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.bridgelabz.qa.seleniumconcepts.LaunchWebinar</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">WebinarPage</span>
-                <span class="method-start">51766 ms</span>
+                <span class="method-start">67017 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bridgelabz.qa.seleniumconcepts.LocatorsDemo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">locatorsDemo</span>
-                <span class="method-start">63013 ms</span>
+                <span class="method-start">77588 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bridgelabz.qa.seleniumconcepts.RobotClass</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">using_Robot_class</span>
-                <span class="method-start">65953 ms</span>
+                <span class="method-start">80069 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bridgelabz.qa.seleniumconcepts.FacebookSelect</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">74371 ms</span>
+                <span class="method-start">86774 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

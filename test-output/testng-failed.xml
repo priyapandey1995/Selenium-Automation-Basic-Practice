@@ -4,9 +4,18 @@
   <parameter name="browser" value="Chrome"/>
   <test thread-count="5" name="C:/Users/pande/OneDrive/Documents/Assignments_Batch_175/Selenium(failed)">
     <classes>
+      <class name="com.bridgelabz.qa.seleniumconcepts.LaunchWebinar">
+        <methods>
+          <include name="TearDown"/>
+          <include name="setUp"/>
+          <include name="WebinarPage"/>
+        </methods>
+      </class> <!-- com.bridgelabz.qa.seleniumconcepts.LaunchWebinar -->
       <class name="com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings">
         <methods>
+          <include name="TearDown"/>
           <include name="signUp_Page"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.bridgelabz.qa.seleniumconcepts.LinkedinFrameHandlings -->
     </classes>
